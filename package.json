@@ -1,0 +1,36 @@
+{
+  "name": "star2star-error-formatter",
+  "version": "1.0.0",
+  "description": "Star2Star JavaScript Error Formatter",
+  "main": "./dist/formatter.js",
+  "scripts": {
+    "init": "mkdir dist",
+    "clean": "rm -rf dist && touch package-lock.json && rm package-lock.json && rm -rf node_modules && npm install --no-save",
+    "test": "env MS_LOGLEVEL=emerg mocha --timeout 15000 --require @babel/register",
+    "build": "./node_modules/.bin/babel --config-file ./babel.config.js src -d dist",
+    "doc": "documentation build src/formatter.js -f html -o . --config documentation.yml"
+  },
+  "keywords": [
+    "error formatter",
+    "formatError"
+  ],
+  "author": "Star2Star Developer",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "uuid": "3.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.4.0",
+    "@babel/node": "7.2.2",
+    "@babel/plugin-proposal-class-properties": "7.4.0",
+    "@babel/preset-env": "7.4.2",
+    "@babel/register": "7.0.0",
+    "documentation": "8.0.2",
+    "assert": "1.4.1",
+    "mocha": "^5.2.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
