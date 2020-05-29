@@ -1,6 +1,6 @@
 {
   "name": "star2star-error-formatter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Star2Star JavaScript Error Formatter",
   "main": "./dist/formatter.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "@babel/register": "7.0.0",
     "documentation": "8.0.2",
     "assert": "1.4.1",
-    "mocha": "^5.2.0"
+    "mocha": "5.2.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"

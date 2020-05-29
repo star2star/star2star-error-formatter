@@ -7,18 +7,6 @@ format error object/messages
 npm install star2star-error-formatter --save
 ```
 
-## Usage
-
-```javascript
-require("babel-polyfill");
-```
-
-When running in node you can specify the log level and pretty print using environment variables
-
-```javascript
-process.env.MS_LOGLEVEL = "debug" 
-process.env.MS_LOGPRETTY = true 
-```
-
 ## Changes
 * 1.0.0 - 1st release - formatError
+* 1.0.1 - Updated README
